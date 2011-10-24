@@ -23,7 +23,7 @@ function init() {
 
             //notification.show();
             //}
-            //});
+            });
 
 
 }
