@@ -23,7 +23,8 @@ function init() {
 
             //notification.show();
             //}
+           
+            document.write( '<img src="icon.png" width="50"></img><p>Removed ' + cookies.length + ' cookies </p>' )
+            
             });
-
-
 }
