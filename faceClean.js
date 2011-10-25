@@ -4,6 +4,8 @@ function init() {
         chrome.cookies = chrome.experimental.cookies;
     }
 
+    //Maybe globally check for  oncompleted pe tab?
+    window.tab_ids = new Array();
 };
 
 
