@@ -4,8 +4,12 @@ function init() {
         chrome.cookies = chrome.experimental.cookies;
     }
 
-    //Maybe globally check for  oncompleted per tab?
+    // Check
+    monitor() && setInterval( "monitor()", 15000 );
+    
+    // Maybe globally check for  oncompleted per tab?
     window.tab_ids = new Array();
+    
 };
 
 
@@ -47,7 +51,8 @@ function monitor( tab ){
 
                 chrome.browserAction.setBadgeText( { 'text': cookies.length.toString() } );
 
-                });
+    });
 
 };
+
 

@@ -2,11 +2,7 @@
 <script>
     // Initialise chrome cookies
     init();
-    // Run the monitor code once
-    monitor();
     // Register cleaning callback
     chrome.browserAction.onClicked.addListener( clean );
-    // Register monitor callback
-    chrome.tabs.onCreated.addListener( monitor );
 </script>
 
