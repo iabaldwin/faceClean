@@ -4,8 +4,8 @@
   "description" : "Remove facebook cookes",
   "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*", "notifications" ],
   "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+  "background_page": "background.html", 
   "browser_action": {
-    "default_icon": "icon.png",
-    "popup": "popup.html"
+    "default_icon": "icon.png"
   }
 }
