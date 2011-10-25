@@ -26,9 +26,8 @@ function init() {
             
             }); 
 
-    var param = document.getElementById( "test2" );
-
-    param.setAttribute( "value", 200 );
-    
-    console.log( param );
+          
+            document.write( '<img src="icon.png" width="50"></img><p>Removed ' + cookies.length + ' cookies </p>' )
+            
+            });
 }
