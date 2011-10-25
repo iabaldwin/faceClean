@@ -23,7 +23,12 @@ function init() {
 
             //notification.show();
             //}
-            });
+            
+            }); 
 
+    var param = document.getElementById( "test2" );
 
+    param.setAttribute( "value", 200 );
+    
+    console.log( param );
 }
