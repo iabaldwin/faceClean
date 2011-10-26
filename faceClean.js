@@ -5,9 +5,9 @@ function init() {
     }
 
     // Check
-    monitor() && setInterval( "monitor()", 15000 );
+    monitor() && setInterval( "monitor()", 5000 );
     
-    // Maybe globally check for  oncompleted per tab?
+    // Maybe globally check for 'oncompleted' per tab?
     window.tab_ids = new Array();
     
 };
