@@ -3,6 +3,8 @@
     // Initialise chrome cookies
     init();
     // Register cleaning callback
-    chrome.browserAction.onClicked.addListener( clean );
+    chrome.browserAction.onClicked.addListener(clean);
+    // Register the update callback
+    check(null) && chrome.tabs.onCreated.addListener(check);
 </script>
 

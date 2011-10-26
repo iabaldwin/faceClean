@@ -5,7 +5,7 @@ function init() {
     }
 
     // Check
-    monitor() && setInterval( "monitor()", 5000 );
+    //check() && setInterval( "check()", 5000 );     setInterval does not seem to be persistent?
     
     // Maybe globally check for 'oncompleted' per tab?
     window.tab_ids = new Array();
@@ -36,7 +36,7 @@ function clean( tab ) {
     }); 
 };
 
-function monitor( tab ){ 
+function check( tab ){ 
 
     chrome.cookies.getAll( { "url":"http://www.facebook.com" }, 
             function( cookies ){ 
