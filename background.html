@@ -5,6 +5,8 @@
     // Register cleaning callback
     chrome.browserAction.onClicked.addListener(clean);
     // Register the (open) update callback
-    check(null) && chrome.tabs.onCreated.addListener(check) && chrome.tabs.onRemoved.addListener(check);
+    check(null) && chrome.tabs.onCreated.addListener(check);
+    // Register the (close) update callback
+    chrome.tabs.onRemoved.addListener(check);
 </script>
 
