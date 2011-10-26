@@ -53,6 +53,7 @@ function check( tab ){
 
     });
 
+    return true;
 };
 
 
