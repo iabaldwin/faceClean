@@ -7,9 +7,6 @@ function init() {
     // Check
     //check() && setInterval( "check()", 5000 );     setInterval does not seem to be persistent?
     
-    // Maybe globally check for 'oncompleted' per tab?
-    window.tab_ids = new Array();
-    
 };
 
 
@@ -29,8 +26,9 @@ function clean( tab ) {
                 }
     
                 setTimeout( function(){ 
-                chrome.browserAction.setBadgeText( { 'text':String(0)  } );
-                chrome.browserAction.setBadgeBackgroundColor( { 'color':[0,255,0,255]})
+                //chrome.browserAction.setBadgeText( { 'text':String(0)  } );
+                chrome.browserAction.setBadgeText( { 'text':''  } );
+                chrome.browserAction.setBadgeBackgroundColor( { 'color':[0,0,0,255]})
                 }
                 ,1000 );
 
@@ -44,13 +42,8 @@ function check( tab ){
 
                 if ( cookies.length> 0 ){
                     chrome.browserAction.setBadgeBackgroundColor( { 'color':[255,0,0,255]})
+                    chrome.browserAction.setBadgeText( { 'text': cookies.length.toString() } );
                 }
-                else
-                {
-                    chrome.browserAction.setBadgeBackgroundColor( { 'color':[0,255,0,255]})
-                }
-
-                chrome.browserAction.setBadgeText( { 'text': cookies.length.toString() } );
 
     });
 
