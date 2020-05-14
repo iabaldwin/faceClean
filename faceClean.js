@@ -4,9 +4,6 @@ function init() {
         chrome.cookies = chrome.experimental.cookies;
     }
 
-    // Check
-    //check() && setInterval( "check()", 5000 );     setInterval does not seem to be persistent?
-    
 };
 
 
